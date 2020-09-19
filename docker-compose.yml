@@ -1,0 +1,12 @@
+version: '2'
+services:
+
+  api:
+    #image: node:12-alpine
+    build: .
+    environment:
+      - DEBUG
+    env_file:
+      - .env
+    ports:
+      - ${EXPRESS_PORT}:${EXPRESS_PORT}

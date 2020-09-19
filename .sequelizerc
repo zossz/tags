@@ -1,0 +1,8 @@
+const { resolve } = require('path')
+
+module.exports = {
+  'config': resolve('etc', 'sequelize.json'),
+  'models-path': resolve('lib/data', 'models'),
+  'seeders-path': resolve('lib/data', 'seeders'),
+  'migrations-path': resolve('lib/data', 'migrations')
+}

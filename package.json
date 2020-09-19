@@ -1,0 +1,36 @@
+{
+  "name": "tags",
+  "version": "0.1.1",
+  "description": "Tagup back-end Technical Challenge",
+  "main": "lib/index.js",
+  "scripts": {
+    "debug": "DEBUG='tags:server:*' node --inspect lib",
+    "start": "node lib",
+    "test": "standard",
+    "migrate": "npx sequelize-cli db:migrate",
+    "rollback": "npx sequelize-cli db:migrate:undo"
+  },
+  "author": "zossz",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "debug": "^4.1.1",
+    "express": "^4.17.1",
+    "joi": "^17.2.1",
+    "pug": "^3.0.0",
+    "sequelize": "^6.3.5",
+    "serve-favicon": "^2.5.0",
+    "sqlite3": "^5.0.0",
+    "uuid": "^8.3.0"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.2.0",
+    "standard": "^14.3.4"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "standard": {
+    "globals": [ "event", "fetch", "sessionStorage" ]
+  }
+}

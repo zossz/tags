@@ -1,0 +1,39 @@
+extends layout.pug
+
+prepend body
+  block dashboard
+    if uuid
+      .request= uuid
+    else
+      .request 00000000-0000-0000-0000-000000000000
+append content
+  form(id='controls')
+    fieldset
+      legend= 'view options'
+      label(for='all' class='left') #[span(id='count')]
+      button(id='all' name='all' type='button' onclick='showAll()') show all
+      label(for='range') page length (#[span(id='limit')])
+      input(id='range' name='range' type='range' list='tickmarks' onchange='setLimit()')
+      label(for='back')
+      button(id='back' name='back' type='button' onclick='pageBack()') back
+      label(for='next')
+      button(id='next' name='next' type='button' onclick='pageNext()') next
+    datalist(id='tickmarks')
+      option(value='0' label='0')
+      option(value='10')
+      option(value='20')
+      option(value='30')
+      option(value='40')
+      option(value='50')
+      option(value='60')
+      option(value='70')
+      option(value='80')
+      option(value='90')
+      option(value='100' label='100')
+  div(id='tags')
+append body
+  block dashboard
+    if uuid
+      .request= uuid
+    else
+      .request 00000000-0000-0000-0000-000000000000

@@ -1,0 +1,97 @@
+
+#controls {
+	text-align: right;
+}
+
+#debug {
+	color: #0000ff;
+	margin: 2vh 2vw;
+	overflow-x: auto;
+}
+
+#null fieldset {
+	background-color: #f0f0f5;
+}
+
+#root {
+	margin: 2vh 2vw;
+}
+
+#status {
+	float: left;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+dl::before {
+	font-weight: bold;
+}
+
+dt::after {
+	content: ':';
+}
+
+fieldset {
+	background-color:  #f7f7fc;
+}
+
+fieldset label {
+	margin-left: 2vw;
+}
+
+h1:before {
+	background-image: url(/lib/favicon.ico);
+    background-position: .16em .12em;
+    background-repeat: no-repeat;
+	color: transparent;
+    content: '⪤';
+	padding: 0 1vw;
+}
+
+input#range {
+	vertical-align: bottom;
+}
+
+input[type="text" i] {
+	font-weight: bold;
+}
+
+.center {
+	margin: 2vh 0;
+	text-align: center;
+}
+
+.footer {
+	display: flow-root;
+	font-size: smaller;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.left, .right {
+	margin: 2vh 2vw;
+}
+
+.left dl::before {
+	content: 'distributions';
+}
+
+.right dl::before {
+	content: 'preferences';
+}
+
+.request {
+	background-color: #909090;
+	color: #aaaaaa;
+	padding: 1vh 1vw;
+}
+

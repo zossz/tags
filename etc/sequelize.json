@@ -1,0 +1,12 @@
+{
+  "development": {
+    "benchmark": true,
+    "dialect": "sqlite"
+  },
+  "integration": {
+    "dialect": "sqlite"
+  },
+  "production": {
+    "dialect": "sqlite"
+  }
+}
